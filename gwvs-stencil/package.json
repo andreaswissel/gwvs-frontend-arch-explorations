@@ -1,0 +1,27 @@
+{
+  "name": "gwvs-stencil",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Stencil App Starter",
+  "scripts": {
+    "build": "stencil build",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "generate": "stencil generate",
+    "storybook": "start-storybook -p 6006",
+    "storybook:dev": "concurrently \"stencil build --watch\", \"start-storybook -p 6006 -s dist\"",
+    "build-storybook": "build-storybook"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@stencil/core": "^1.8.8",
+    "@stencil/router": "^1.0.1",
+    "@storybook/addon-knobs": "^5.3.13",
+    "@storybook/html": "^5.3.13",
+    "babel-loader": "^8.0.6",
+    "concurrently": "^5.1.0"
+  },
+  "license": "MIT",
+  "dependencies": {}
+}

@@ -1,0 +1,27 @@
+{
+  "name": "gwvs-roca",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd src && lite-server",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lit-html": "^1.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@storybook/addon-actions": "^5.3.13",
+    "@storybook/addon-knobs": "^5.3.13",
+    "@storybook/addon-links": "^5.3.13",
+    "@storybook/addon-notes": "^5.3.13",
+    "@storybook/web-components": "^5.3.13",
+    "babel-loader": "^8.0.6",
+    "lite-server": "^2.5.4"
+  }
+}

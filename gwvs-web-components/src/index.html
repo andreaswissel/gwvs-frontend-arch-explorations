@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GwvsWebComponents</title>
+    <script src="main.js" type="module"></script>
+    <style>
+        html {
+            font-size: 8px;
+        }
+
+        gwvs-button, gwvs-card {
+            display: block;
+        }
+
+        h1 {
+            font-family: "SF Pro Display", Helvetica, Arial, sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 21px;
+
+            margin: 0 0 4rem 0;
+        }
+
+        gwvs-button {
+            margin: 3rem 0 0 auto;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content gwvs-input {
+            margin-bottom: 3rem;
+        }
+    </style>
+</head>
+<body>
+<gwvs-card>
+    <div class="content" slot="content">
+        <h1>Login</h1>
+        <gwvs-input label="Username" placeholder="Username" type="text"></gwvs-input>
+        <gwvs-input label="Passwort" placeholder="Password" type="password"></gwvs-input>
+        <gwvs-button>
+            <span slot="label">Submit</span>
+        </gwvs-button>
+    </div>
+</gwvs-card>
+</body>
+</html>
